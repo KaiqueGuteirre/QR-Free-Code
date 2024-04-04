@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -126,6 +127,7 @@ header .active {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 16px 25px;
+  box-shadow: 5px 10px 30px black;
 }
 .container.active {
   height: 530px;
@@ -207,6 +209,10 @@ button:active {
 /* ============> END GERADOR <============ */
 
 @media (max-width: 800px) {
+  body {
+    overflow: visible;
+  }
+
   .box-box {
     flex-direction: column;
   }
@@ -229,5 +235,9 @@ button:active {
 
   .box-a {
     margin-top: 30px;
+  }
+
+  .container {
+    margin-bottom: 230px;
   }
 }
